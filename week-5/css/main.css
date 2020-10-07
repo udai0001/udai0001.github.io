@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+}
+
+/* 
+ This is a CSS Comment
+ Shortcut for adding a comment is Ctrl + / or Cmnd + /
+*/
+
+h1 {
+    background-color: peru;
+    color: white;
+}
+
+p {
+    background-color: lightblue;
+}
+
+/* Selecting multiple elements to add style */
+h1,
+h2,
+h3,
+h4 {
+    text-decoration: underline;
+}
+
+/* Selecting child elements */
+nav ul {
+    list-style: none;
+}
+
+/* Selecting child elements multiple levels */
+nav ul a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+/* Selecting HTML elements with class name */
+.orange-text{
+    background: darkslategray;
+    color: orange;
+    text-decoration: none;
+}
+
+/* Slecting id value for styling the element */
+#tow {
+    background: orange;
+}
+
+/* We can add multiple classes to one element */
+.large-text {
+    font-size: 20px;
+}
+
+/* Child selector or Direct child selector
+   Selecting only the 'p' directly inside the article
+*/
+article>p {
+    font-size: 24px;
+}
+
+/* Adjacent sibling selector 
+Selecting only ul that is adjacent to an h3
+*/
+h3+ul {
+    border: 1px solid black;
+}
+
+/* Attribute selector
+Selecting element that has attribute of href set to valye #tow
+*/
+[href="#tow"] {
+    font-weight: bold;
+}
+[target="_blank"] {
+    text-transform: uppercase;
+}
+
+/* Using Pseudo classes
+   Styling Navigation
+*/
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background: orange;
+    /* Horizontal, Vertical, Blur, Spread, Colour */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline white;
+}
+
+nav ul a:active {
+    /* Horizontal, Vertical, Blur, Spread, Color */
+    box-shadow: 0px 0px 4px 2px black;
+}
+
+/* Position related selectors */
+/* First child selector */
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+/* last child selector */
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* Collapse table borders */
+table {
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+    /* hex value for color with 6 characters */
+    background-color: #d5836c;
+}
+
+/* using the nth child with n.
+where n is 0,1,2,... until the number of elements 
+*/
+table th:nth-child(n),
+table td:nth-child(n) {
+    /* hex value for color with 3 characters */
+    border: 1px solid #000;
+}
+
+/* 2n+1 will be 1,3,5,7,... */
+
+table td:nth-child(2n+1) {
+    background: rgba(0, 0, 0, .2);
+}
+
+/* CSS Specificity
+   Formula: inline-styles, id, class, tag-name
+*/
+
+/* Adding a style using tag-name
+   Specificity: 0001
+*/
+footer {
+    background: aqua;
+}
+
+/* Adding a style using tag-name
+   Specificity: 0001
+   since it comes after, cascade will overwrite the above
+*/
+footer {
+    background: red;
+}
+/* Adding a style using 2 tag-names  
+Specificity: 0002 */
+body footer {
+    background: cornflowerblue;
+} 
+
+/* Adding a style using class name
+specificity: 0010
+*/
+.site-footer {
+    background-color: orange;
+}
+
+/*
+Adding a style using class name and tag name 
+ */
+ footer.site-footer {
+     background-color: lightgreen;
+ }
