@@ -1,5 +1,14 @@
-/* adding background color for the website */
+/* adding style elements to the website */
 body {
     background-color: #aad4cf;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* adjusting website alignment */
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* adding title image */

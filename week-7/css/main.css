@@ -3,6 +3,12 @@ body {
     color: darkslategray;
     /* Adding background image */
     background-image: url("../images/white_brick_wall.png");
+    padding-top: 82px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 /* 
@@ -14,6 +20,16 @@ h1 {
     background-color: peru;
     color: white;
 }
+
+/* html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    border: inherit;
+} */
 
 p {
     background-color: lightblue;
@@ -32,21 +48,60 @@ nav ul {
     list-style: none;
 }
 
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
 /* Selecting child elements multiple levels */
 nav ul a {
+    display: block;
     color: darkslategray;
     text-decoration: none;
 }
 
 /* Selecting HTML elements with class name */
 .orange-text{
+    padding: 1.5em;
+    width: 300px;
+    display: block;
     background: darkslategray;
     color: orange;
     text-decoration: none;
 }
 
+/* Two column layout using float */
+article,
+aside {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    width: 80%;
+    box-sizing: border-box;
+    float: left;
+}
+
+img {
+    width: 100%;
+}
+
+aside {
+    width: 20%;
+}
+
+section {
+    clear: both;
+}
+.orange-text.large-text {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 /* Slecting id value for styling the element */
 #tow {
+    position: relative;
     /* color, image, repeat, x-axis, y-axis */
     background: orange url("../images/bread.jpg") no-repeat center center;
     background-size: cover;
@@ -57,7 +112,7 @@ nav ul a {
      font-size: 1.5rem;
      
      /* adding padding to add space between the border and content */
-    padding: 1em;
+    padding: 1em 1em 3em 1em;
     /* 1em = 1 x 24 = 24px */
     /* Adding width using viewport width unit */
     width: 50vw;
@@ -95,6 +150,15 @@ Selecting element that has attribute of href set to valye #tow
 }
 [target="_blank"] {
     text-transform: uppercase;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
 }
 
 /* Using Pseudo classes
