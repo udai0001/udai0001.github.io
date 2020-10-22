@@ -27,9 +27,9 @@ nav ul a {
 }
 /* giving a border to the list */
 nav ul a,
-nav ul a:link,
-nav ul a:visited {
-    border: 1px solid black;
+nav ul a:link {
+    border-right: medium dashed green;
+   
 }
 /* adding a background while hovering */
 nav ul a:hover,
@@ -46,4 +46,17 @@ nav ul li {
 
 form {
     border: 1px solid black;
+    padding: 2%;
+}
+
+#fullname {
+    width: 80%;
+}
+
+div {
+    padding: 1%;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.5);
 }
