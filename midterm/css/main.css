@@ -4,6 +4,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    font-size: 56px;
+    color: white;
+    font-weight: normal;
+}
+
+h2, h3 {
+    font-size: 32px;
+    font-weight: 550;
+}
+
 /* adjusting website alignment */
 .container {
     max-width: 1024px;
@@ -14,28 +25,31 @@ body {
 /* editing the list items */
 main section ul {
     padding: 17px;
-}
+}    
 /* removing bullets */
 nav ul {
     list-style: none;
 }
 /* removing undrline */
 nav ul a {
+    font-size: 24px;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 525;
 }
 /* giving a border to the list */
-nav ul a,
-nav ul a:link {
-    border-right: medium dashed green;
-   
+.home,
+.story {
+    border-right: medium solid black;
 }
+
 /* adding a background while hovering */
 nav ul a:hover,
 nav ul a:focus {
     background-color: rgba(0, 0, 0, 0.10);
 }
+
 /* aligning the links */
 nav ul li {
     display: inline-block;
@@ -49,14 +63,36 @@ form {
     padding: 2%;
 }
 
-#fullname {
-    width: 80%;
+#fullname,
+#youremail {
+    width: 98%;
+    height: 30px;
 }
+
+textarea {
+    resize: none;
+    width: 98%;
+    height: 100px;
+  }
+
 
 div {
     padding: 1%;
 }
 
+/* styling the button */
 button {
-    background-color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 1%;
+}
+
+.star {
+    float: left;
+}
+
+.centered-bottom {
+    position: absolute;
+  top: 18%;
+  right: 43%;
 }
