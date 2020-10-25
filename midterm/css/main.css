@@ -4,6 +4,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+p {
+    font-size: 17px;
+}
+
 h1 {
     font-size: 56px;
     color: white;
@@ -25,35 +29,45 @@ h2, h3 {
 /* editing the list items */
 main section ul {
     padding: 17px;
+    margin-top: 0%;
 }    
+
 /* removing bullets */
 nav ul {
     list-style: none;
+    margin-top: 0%;
+    text-align: center;
 }
+
 /* removing undrline */
 nav ul a {
     font-size: 24px;
     color: black;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 525;
+    font-weight: bold;
 }
+
 /* giving a border to the list */
 .home,
 .story {
     border-right: medium solid black;
+    padding-right: 125px;
+}
+.contact{
+    padding-right: 45px;
 }
 
 /* adding a background while hovering */
-nav ul a:hover,
+/* nav ul a:hover,
 nav ul a:focus {
     background-color: rgba(0, 0, 0, 0.10);
-}
+} */
 
 /* aligning the links */
 nav ul li {
     display: inline-block;
-    width: 32%;
+    width: 33%;
     padding: 1em;
     box-sizing: border-box;
 }
@@ -76,7 +90,12 @@ textarea {
   }
 
 
-div {
+article {
+    padding: 1%;
+    padding-bottom: 0%;
+}
+
+.contact-box {
     padding: 1%;
 }
 
@@ -85,14 +104,44 @@ button {
     text-transform: uppercase;
     background-color: transparent;
     padding: 1%;
+    margin-top: 2%;
 }
 
 .star {
     float: left;
+    margin-right: 2%;
+    margin-bottom: 1%;
 }
 
 .centered-bottom {
     position: absolute;
-  top: 18%;
-  right: 43%;
+  top: 15.5%;
+  right: 42.8%;
+}
+
+#facts {
+    margin-bottom: 0%;
+}
+
+#learn-more {
+    margin-top: 0%;
+}
+
+section ul li {
+    font-size: 17px;
+}
+
+footer p {
+    text-align: right;
+    padding-right: 3%;
+}
+
+#btt {
+    font-size: 22px;
+    text-decoration: underline;
+    color: black;
+    position: fixed;
+    bottom: 10px;
+    right: 18.5%;
+    left: 75%;
 }
