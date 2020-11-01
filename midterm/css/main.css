@@ -16,7 +16,7 @@ h1 {
 
 h2, h3 {
     font-size: 32px;
-    font-weight: 550;
+    font-weight: normal;
 }
 
 /* adjusting website alignment */
@@ -39,7 +39,7 @@ nav ul {
     text-align: center;
 }
 
-/* removing undrline */
+/* removing undrline and adding styling */
 nav ul a {
     font-size: 24px;
     color: black;
@@ -58,12 +58,6 @@ nav ul a {
     padding-right: 45px;
 }
 
-/* adding a background while hovering */
-/* nav ul a:hover,
-nav ul a:focus {
-    background-color: rgba(0, 0, 0, 0.10);
-} */
-
 /* aligning the links */
 nav ul li {
     display: inline-block;
@@ -72,13 +66,15 @@ nav ul li {
     box-sizing: border-box;
 }
 
+/* adding border to contact info */
 form {
     border: 1px solid black;
     padding: 2%;
 }
 
+/* adjusting size of input boxes */
 #fullname,
-#youremail {
+#email {
     width: 98%;
     height: 30px;
 }
@@ -89,7 +85,7 @@ textarea {
     height: 100px;
   }
 
-
+/* adding additional padding */
 article {
     padding: 1%;
     padding-bottom: 0%;
@@ -99,7 +95,7 @@ article {
     padding: 1%;
 }
 
-/* styling the button */
+/* styling the 'SEND' button */
 button {
     text-transform: uppercase;
     background-color: transparent;
@@ -107,18 +103,23 @@ button {
     margin-top: 2%;
 }
 
+/* placing the image beside the text */
 .star {
     float: left;
     margin-right: 2%;
     margin-bottom: 1%;
 }
 
+/* positioning the main heading */
 .centered-bottom {
     position: absolute;
-  top: 15.5%;
-  right: 42.8%;
+  /* top: 15.5%;
+  right: 42.8%; */
+  top: 23.5%;
+  right: 39.25%;
 }
 
+/* removing margins */
 #facts {
     margin-bottom: 0%;
 }
@@ -127,21 +128,24 @@ button {
     margin-top: 0%;
 }
 
+/* increasing font size */
 section ul li {
     font-size: 17px;
 }
 
+/* positioning the copyright */
 footer p {
     text-align: right;
     padding-right: 3%;
+    padding-bottom: 3%;
 }
 
+/* positioning the 'back to top' button */
 #btt {
-    font-size: 22px;
+    font-size: 18px;
     text-decoration: underline;
     color: black;
     position: fixed;
     bottom: 10px;
-    right: 18.5%;
-    left: 75%;
+    left: 92%;
 }
