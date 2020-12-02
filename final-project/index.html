@@ -12,25 +12,28 @@
         <header class="site-header">
             <div class="header-nav">
                 <ul>
-                    <li><img src="./images/logo.png" alt="Three Star Media logo"></li>
+                    <li><img class="mobile-logo" src="./images/logo.png" alt="Three Star Media logo"></li>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><form action="#" method="POST">
-                        <label id="search">Search</label>
+                        <label for="search" id="search">Search</label>
                         <input type="text" placeholder="Search..">
-                        <button><i class="im im-magnifier"></i></button>
+                        <button class="btn"><i class="im im-magnifier"></i></button>
                     </form>
                     </li>
                 </ul>
             </div>
             <div class="site-banner">
                 <img src="./images/main-banner.jpg" alt="office space">
-                <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt recusandae tenetur iste. Ullam ratione eveniet veritatis debitis ipsum laudantium praesentium, eos doloremque temporibus molestiae corporis dignissimos maiores facilis quo at?</p>
-                <a href="#">Connect with us</a>
+                <div class="text-block">
+
+                    <h1>Welcome to Three Star Media</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt recusandae tenetur iste. Ullam ratione eveniet veritatis debitis ipsum laudantium praesentium, eos doloremque temporibus molestiae corporis dignissimos maiores facilis quo at?</p>
+                    <a href="#">Connect with us</a>
+                </div>
             </div>
         </header>
         <!-- Main content -->
@@ -46,7 +49,7 @@
             </section>
             <!-- Our Services -->
             <section class="our-services">
-                    <div class="cards">
+                    <div>
                         <h2>Our Services</h2>
                         <section class="cards">
                             <img src="./images/digital.jpg" alt="Laptop and mobile">
@@ -56,6 +59,7 @@
                                 <a href="#" class="btn">Digital Plans</a>
                             </div>
                         </section>
+                        <br>
                         <section class="cards">
                             <img src="./images/marketing.jpg" alt="laptop with graph">
                             <div class="info">
@@ -64,6 +68,7 @@
                                 <a href="#" class="btn">Marketing Plans</a>
                             </div>
                         </section>
+                        <br>
                         <section class="cards">
                             <img src="./images/video.jpg" alt="hand holding a mobile">
                             <div class="info">
@@ -72,6 +77,7 @@
                                 <a href="#" class="btn">Video Plans</a>
                             </div>
                         </section>
+                        <br>
                         <section class="cards">
                             <img src="./images/web.jpg" alt="notebook with a pen and mobile">
                             <div class="info">
@@ -80,6 +86,7 @@
                                 <a href="#" class="btn">Web Plans</a>
                             </div>
                         </section>
+                        <br>
                         <section class="cards">
                             <img src="./images/print.jpg" alt="mail boxes">
                             <div class="info">
@@ -88,6 +95,7 @@
                                 <a href="#" class="btn">Print Plans</a>
                             </div>
                         </section>
+                        <br>
                     </div>
             </section>
             <!-- Our Vision -->
@@ -102,22 +110,28 @@
                 <div>
                     <h3>Our Team</h3>
                 </div>
-                <div>
-                    <img src="./images/john.jpg" alt="John Doe">
-                </div>
-                <div>
-                    <h4>John Doe</h4>
-                    <h5>CEO and Co-owner</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita libero voluptas rerum, laboriosam labore, error laborum, minus nulla consectetur et facere vitae beatae sapiente voluptatem tempora est quos voluptatibus.</p>
-                </div>
-                <div>
-                    <img src="./images/bob.jpg" alt="Bob Rite">
-                </div>
-                <div>
-                    <h4>Bob Rite</h4>
-                    <h5>CEO and Co-owner</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore id cupiditate eius reprehenderit, quibusdam recusandae maiores saepe asperiores fugiat praesentium ipsum qui modi totam! Maiores quaerat ea nihil ex!</p>
-                </div>
+                <section class="members">
+                    <div>
+                        <img src="./images/john.jpg" alt="John Doe">
+                    </div>
+                    <div class="john">
+                        <h4>John Doe</h4>
+                        <h5>CEO and Co-owner</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita libero voluptas rerum, laboriosam labore, error laborum, minus nulla consectetur et facere vitae beatae sapiente voluptatem tempora est quos voluptatibus.</p>
+                    </div>
+                </section>
+                <br>
+                <section class="members">
+                    <div>
+                        <img src="./images/bob.jpg" alt="Bob Rite">
+                    </div>
+                    <div class="bob">
+                        <h4>Bob Rite</h4>
+                        <h5>CEO and Co-owner</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempore id cupiditate eius reprehenderit, quibusdam recusandae maiores saepe asperiores fugiat praesentium ipsum qui modi totam! Maiores quaerat ea nihil ex!</p>
+                    </div>
+                </section>
+                <br>
             </section>
             <!-- Contact Us -->
             <section class="contact-us">
