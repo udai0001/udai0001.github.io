@@ -120,32 +120,18 @@ ul li a.current {
 
 ul li {
     padding: 1em;
+    text-align: center;
 }
 
+ul li:nth-child(1) {
+    display: inline-block;
+}
 
-ul li:nth-child(2) {
-    text-align: center;
-}
-ul li:nth-child(3) {
-    text-align: center;
-}
-ul li:nth-child(4) {
-    text-align: center;
-}
-ul li:nth-child(5) {
-    text-align: center;
-}
-ul li:nth-child(6) {
-    text-align: center;
-}
-ul li:nth-child(7) {
-    text-align: center;
-}
 .header-nav label {
     display: none;
 }
 .header-nav input {
-    width: 95%;
+    width: 80%;
 }
 
 .site-banner img {
