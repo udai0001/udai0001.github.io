@@ -354,7 +354,8 @@ td {
 ------------------------------------------------*/
 
 @media screen and (min-width: 760px) {
-    /* ----------Header---------- */
+    
+    /* ----------HEADER---------- */
 
     .header-nav ul {
         display: flex;
@@ -379,7 +380,8 @@ td {
         margin-right: 8%;
     }
 
-    /* ----------About us----------- */
+    /* ----------ABOUT US----------- */
+
     .about-us img {
         width: 55%;
         height: 55%;
@@ -399,7 +401,7 @@ td {
 
     }
 
-    /* -----------Our Services------------- */
+    /* -----------OUR SERVICES------------- */
     
     .our-services div a {
         width: 100%;
@@ -443,6 +445,7 @@ td {
     }
 
     /* -----------OUR TEAM------------ */
+
     .bob-pic {
         background-color: transparent;
     }
@@ -481,6 +484,7 @@ td {
     }
 
     /* ---------CONTACT US------------ */
+
     .contact-us {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -507,7 +511,4 @@ td {
     .contact-us .hrs {
         grid-area: four;
     }
-
-
-
 }
