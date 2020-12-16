@@ -83,10 +83,12 @@ h1 {
 
 h2 {
     font-size: 3.375rem;
+    font-weight: bolder;
 }
 
 h3 {
     font-size: 2.25rem;
+    font-weight: bolder;
 }
 
 h4 {
@@ -101,7 +103,11 @@ p {
     margin: 1em 0;
 }
 
-/* Header */
+.im.im-care-right {
+    padding-left: 10px;
+}
+
+/* ----------------Header-------------- */
 .site-header {
     background-color: #222;
     margin: 0%;
@@ -113,20 +119,10 @@ ul li a {
     color: #c78c06; 
 }
 
-/* ul li a:hover,
-ul li a:focus,
-ul li a.current {
-    background-color: #c78c06;
-} */
-
 ul li {
     padding: 1em;
     text-align: center;
 }
-
-/* ul li:nth-child(1) {
-    display: inline-block;
-} */
 
 .header-nav label {
     display: none;
@@ -134,7 +130,10 @@ ul li {
 .header-nav input {
     width: 80%;
 }
-
+.search {
+    display: flex;
+    justify-content: center;
+}
 .site-banner img {
     width: 100%;
 }
@@ -168,20 +167,26 @@ ul li {
 .home {
     margin: 0 2% 0 2%;
 }
-/* About Us */
+/* -------------About Us-------------- */
+
 .about-us {
     background-color: #ffe6ac;
 }
-.about-us div {
+.clearfix {
     padding: .5em;
 }
 .about-us img {
     width: 100%;
 }
 
+.about-us h2 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
 #search {
     resize: none;
-    height: 30px;
+    height: 35px;
 }
 
 .btn {
@@ -206,12 +211,14 @@ ul li {
 .text-block a {
     margin: 30px;
 }
-/* Our Services */
+
+/* -------------Our Services------------- */
+
 .our-services img {
     width: 100%;
 }
 
-.cards {
+.cards-1, .cards-2, .cards-3, .cards-4, .cards-5 {
     background-color: #ffe6ac;
 }
 
@@ -228,7 +235,7 @@ ul li {
     padding: 30px;
 }
 
-/* Our Vision */
+/* ----------Our Vision----------- */
 .our-vision {
     background-image: url("../images/vision.jpg");
     background-size: cover;
@@ -237,7 +244,7 @@ ul li {
 }
 
 .our-vision a {
-    background-color: #222;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
     text-decoration: none;
@@ -256,28 +263,32 @@ ul li {
     margin: 20px;
 }
 
-/* Our Team */
+/* ------------Our Team------------ */
 
 .our-team img {
     width: 100%;
 }
-.members h4 {
+.john h4,
+.john h5 {
     margin-bottom: 0%;
 }
-.members h5 {
+.bob h4,
+.bob h5 {
     margin-top: 0%;
 }
 
-.members {
+.john-pic, .bob-pic {
     background-color: #ffe6ac;
 }
 
 .john {
     padding: 1em;
+    background-color: #ffe6ac;
 }
 
 .bob {
     padding: 1em;
+    background-color: #ffe6ac;
 }
 
 td {
@@ -288,7 +299,7 @@ hr {
     border: 1px solid #c78c06;
 }
 
-/* Contact Us */
+/* ------------Contact Us---------------- */
 
 #fullname,
 #email {
@@ -328,7 +339,7 @@ td {
     padding-left: 2%;
 }
 
-/* Footer */
+/* ----------Footer----------- */
 .site-footer {
     background-color: #222;
     color: #c78c06;
@@ -336,4 +347,167 @@ td {
 
 .site-footer div {
     padding: 4% 0% 1% 2%;
+}
+
+/* ---------------------------------------------
+                DESKTOP STYLE
+------------------------------------------------*/
+
+@media screen and (min-width: 760px) {
+    /* ----------Header---------- */
+
+    .header-nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .header-nav ul li {
+        align-self: center;
+    }
+    .logo, .home {
+        width: 15%;
+    }
+    .logo {
+        background-color: transparent;
+        margin-right: 0%;
+    }
+    ul li:nth-child(7) {
+        padding: 0%;
+    }
+
+    .bg-trans{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    /* ----------About us----------- */
+    .about-us img {
+        width: 55%;
+        height: 55%;
+        float: left;
+        margin-right: 3%;
+    }
+    .clearfix::after {
+        content: "";
+        clear: both;
+    }
+    .about-us p {
+        font-size: 14px;
+        margin-top: 0%;
+    }
+    .clearfix {
+        padding: 1% 10% 1% 10%;
+
+    }
+
+    /* -----------Our Services------------- */
+    
+    .our-services div a {
+        width: 100%;
+    }
+    .field-1 {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 1em;
+    }
+
+    .field-1 {
+        grid-template-areas: 
+        "one one one one one one"
+        "two two two three three three"
+        "four four five five six six";
+    }
+
+    .field-1 h2 {
+        grid-area: one;
+    }
+
+    .field-1 .cards-1 {
+        grid-area: two;
+    }
+
+    .field-1 .cards-2 {
+        grid-area: three;
+    }
+
+    .field-1 .cards-3 {
+        grid-area: four;
+    }
+
+    .field-1 .cards-4 {
+        grid-area: five;
+    }
+
+    .field-1 .cards-5 {
+        grid-area: six;
+    }
+
+    /* -----------OUR TEAM------------ */
+    .bob-pic {
+        background-color: transparent;
+    }
+    
+    .field-2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+    }
+    
+    .field-2 {
+        grid-template-areas: 
+        "one one"
+        "two three"
+        "four five";
+    }
+
+    .field-2 .team {
+        grid-area: one;
+    }
+
+    .field-2 .john-pic {
+        grid-area: two;
+    }
+
+    .field-2 .john {
+        grid-area: three;
+    }
+
+    .field-2 .bob-pic {
+        grid-area: five;
+    }
+
+    .field-2 .bob {
+        grid-area: four;
+    }
+
+    /* ---------CONTACT US------------ */
+    .contact-us {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 1em;
+        grid-template-areas: 
+        "one one"
+        "two three"
+        "four four";
+    }
+
+    .contact-us h3 {
+        grid-area: one;
+    }
+
+    .contact-us .send-msg {
+        grid-area: two;
+    }
+
+    .contact-us .loc {
+        grid-area: three;
+    }
+
+    .contact-us .hrs {
+        grid-area: four;
+    }
+
+
+
 }
