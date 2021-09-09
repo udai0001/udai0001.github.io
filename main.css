@@ -1,0 +1,159 @@
+/* General CSS styles */
+
+/* Header styles of color and fixed width to the logo applied to the site header */
+header {
+    background-color: #d6effd;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+/* Nav styles with font, color and hover and active states */
+nav a {
+    font-family:'Caveat', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: #526a7c;
+}
+
+nav a.active {
+    text-decoration: underline;
+    text-decoration-color: #526a7c;
+}
+
+.banner-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adding an animation of fade-in to all the initial images on the site to have an ease-in visual for the viewer when they visit the site/whenever they refresh the page */
+.fade-in {
+    animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+  }
+
+main hr {
+    border: 4px solid #A6D9FD;
+    border-radius: 20px;
+}
+
+/* Adding border radius to the about me image in the homepage */
+.moha-johar {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+}
+
+.container p {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+/* Setting width for the images in the gallery of the homepage */
+main .preview img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Setting footer styles */
+footer {
+    background-color: #d6effd;
+}
+
+footer p {
+    font-family: 'Caveat', cursive;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+svg {
+    fill: #526a7c;
+}
+
+/* Adding border radius to all the images in the about page */
+.about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+/* Setting max-width and height to all the images in the work page */
+.work img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adding styles to make the videos in the work page responsive and grow in size as the screen expands */
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contact img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+.contact p {
+    font-family: 'Caveat', sans-serif;
+    font-size: 24px;
+}
+
+/* Setting styles to the form labels and inputs */
+.contact-form label {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-form input {
+    background-color: #d6effd;
+    border: 1px solid #526a7c;
+}
+
+.contact-form textarea {
+    background-color: #d6effd;
+    border: 1px solid #526a7c;
+}
+
+.contact-form button {
+    background-color: #526a7c;
+    font-family: 'Caveat', sans-serif;
+    font-size: 22px;
+    color: #d6effd;
+}

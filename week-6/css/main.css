@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    /* Adding background image */
+    background-image: url("../images/white_brick_wall.png");
+}
+
+/* 
+ This is a CSS Comment
+ Shortcut for adding a comment is Ctrl + / or Cmnd + /
+*/
+
+h1 {
+    background-color: peru;
+    color: white;
+}
+
+p {
+    background-color: lightblue;
+}
+
+/* Selecting multiple elements to add style */
+h1,
+h2,
+h3,
+h4 {
+    text-decoration: underline;
+}
+
+/* Selecting child elements */
+nav ul {
+    list-style: none;
+}
+
+/* Selecting child elements multiple levels */
+nav ul a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+/* Selecting HTML elements with class name */
+.orange-text{
+    background: darkslategray;
+    color: orange;
+    text-decoration: none;
+}
+
+/* Slecting id value for styling the element */
+#tow {
+    /* color, image, repeat, x-axis, y-axis */
+    background: orange url("../images/bread.jpg") no-repeat center center;
+    background-size: cover;
+     /*addtional styles to make text visible  */
+     color: white;
+     /* font-size: 22px; */
+     /* updating font size to rem 1.5 x 16 = 24 */
+     font-size: 1.5rem;
+     
+     /* adding padding to add space between the border and content */
+    padding: 1em;
+    /* 1em = 1 x 24 = 24px */
+    /* Adding width using viewport width unit */
+    width: 50vw;
+    }
+
+/* We can add multiple classes to one element */
+.large-text {
+    font-size: 20px;
+}
+
+/* Child selector or Direct child selector
+   Selecting only the 'p' directly inside the article
+*/
+article>p {
+    font-size: 24px;
+    font-weight: bold;
+    /* values - light, normal, bold, bolder or 100, 200, 300, 400... */
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+/* Adjacent sibling selector 
+Selecting only ul that is adjacent to an h3
+*/
+h3+ul {
+    border: 1px solid black;
+}
+
+/* Attribute selector
+Selecting element that has attribute of href set to valye #tow
+*/
+[href="#tow"] {
+    font-weight: bold;
+}
+[target="_blank"] {
+    text-transform: uppercase;
+}
+
+/* Using Pseudo classes
+   Styling Navigation
+*/
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background: orange;
+    /* Horizontal, Vertical, Blur, Spread, Colour */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline white;
+}
+
+nav ul a:active {
+    /* Horizontal, Vertical, Blur, Spread, Color */
+    box-shadow: 0px 0px 4px 2px black;
+}
+
+/* Position related selectors */
+/* First child selector */
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+/* last child selector */
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* Collapse table borders */
+table {
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+    /* hex value for color with 6 characters */
+    background-color: #d5836c;
+}
+
+/* using the nth child with n.
+where n is 0,1,2,... until the number of elements 
+*/
+table th:nth-child(n),
+table td:nth-child(n) {
+    /* hex value for color with 3 characters */
+    border: 1px solid #000;
+}
+
+/* 2n+1 will be 1,3,5,7,... */
+
+table td:nth-child(2n+1) {
+    background: rgba(0, 0, 0, .2);
+}
+
+/* CSS Specificity
+   Formula: inline-styles, id, class, tag-name
+*/
+
+/* Adding a style using tag-name
+   Specificity: 0001
+*/
+footer {
+    background: aqua;
+}
+
+/* Adding a style using tag-name
+   Specificity: 0001
+   since it comes after, cascade will overwrite the above
+*/
+footer {
+    background: red;
+}
+/* Adding a style using 2 tag-names  
+Specificity: 0002 */
+body footer {
+    background: cornflowerblue;
+} 
+
+/* Adding a style using class name
+specificity: 0010
+*/
+.site-footer {
+    background-color: orange;
+}
+
+/*
+Adding a style using class name and tag name 
+specificity: 0011
+ */
+ footer.site-footer {
+     background-color: lightgreen;
+ }
+ /* CSS Box Model */
+ section p {
+     width: 50%;
+     /* padding: 1em; */
+
+     /* top right bottom left */
+     /* padding: 1em .5em 1em .5em; */
+
+     /* top-bottom left-right */
+     padding: 1em .5em;
+
+     /* margin: 2em;
+     2em = 2 x 16px = 32px */
+
+     /* top right bottom left */
+     margin: -1em 2em 2em 2em;
+
+     /* border: 2px solid black; */
+     border-bottom: 2px solid black;
+ }
+ /* Adding borders as separators */
+aside ul li {
+    border-bottom: 1px solid black;
+  }
+  
+  aside ul li:last-child {
+    border: none;
+  }

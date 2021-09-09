@@ -1,0 +1,151 @@
+/* adding style elements to the website */
+body {
+    background-color: #aad4cf;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-size: 17px;
+}
+
+h1 {
+    font-size: 56px;
+    color: white;
+    font-weight: normal;
+}
+
+h2, h3 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* adjusting website alignment */
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* editing the list items */
+main section ul {
+    padding: 17px;
+    margin-top: 0%;
+}    
+
+/* removing bullets */
+nav ul {
+    list-style: none;
+    margin-top: 0%;
+    text-align: center;
+}
+
+/* removing undrline and adding styling */
+nav ul a {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/* giving a border to the list */
+.home,
+.story {
+    border-right: medium solid black;
+    padding-right: 125px;
+}
+.contact{
+    padding-right: 45px;
+}
+
+/* aligning the links */
+nav ul li {
+    display: inline-block;
+    width: 33%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+/* adding border to contact info */
+form {
+    border: 1px solid black;
+    padding: 2%;
+}
+
+/* adjusting size of input boxes */
+#fullname,
+#email {
+    width: 98%;
+    height: 30px;
+}
+
+textarea {
+    resize: none;
+    width: 98%;
+    height: 100px;
+  }
+
+/* adding additional padding */
+article {
+    padding: 1%;
+    padding-bottom: 0%;
+}
+
+.contact-box {
+    padding: 1%;
+}
+
+/* styling the 'SEND' button */
+button {
+    text-transform: uppercase;
+    background-color: transparent;
+    padding: 1%;
+    margin-top: 2%;
+}
+
+/* placing the image beside the text */
+.star {
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+
+/* positioning the main heading */
+.centered-bottom {
+    position: absolute;
+  /* top: 15.5%;
+  right: 42.8%; */
+  top: 23.5%;
+  right: 39.25%;
+}
+
+/* removing margins */
+#facts {
+    margin-bottom: 0%;
+}
+
+#learn-more {
+    margin-top: 0%;
+}
+
+/* increasing font size */
+section ul li {
+    font-size: 17px;
+}
+
+/* positioning the copyright */
+footer p {
+    text-align: right;
+    padding-right: 3%;
+    padding-bottom: 3%;
+}
+
+/* positioning the 'back to top' button */
+#btt {
+    font-size: 18px;
+    text-decoration: underline;
+    color: black;
+    position: fixed;
+    bottom: 10px;
+    left: 92%;
+}
